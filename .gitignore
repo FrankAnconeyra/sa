@@ -1,23 +1,22 @@
-```
 # Compiled and build artifacts
 *.pyc
 __pycache__/
 *.o
 *.obj
-dist/
-build/
-target/
+*.class
+*.exe
+*.dll
+*.so
+*.a
+*.out
 
 # Dependencies
 node_modules/
-vendor/
-*.egg-info/
-.Python/
 venv/
 .venv/
 .env
 .env.local
-.env.
+.env.*
 
 # Logs and temp files
 *.log
@@ -28,10 +27,8 @@ venv/
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS generated files
+# System files
 .DS_Store
 Thumbs.db
 
@@ -40,11 +37,22 @@ coverage/
 htmlcov/
 .coverage
 
-# Laravel specific
-public/storage
-bootstrap/cache/
-storage/
-!.env
-.env.*.php
-.env.php
-```
+# Build directories
+dist/
+build/
+target/
+.gradle/
+
+# Python specific
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Cache directories
+.mypy_cache/
+.pytest_cache/
+.cargo/
+.pip/
